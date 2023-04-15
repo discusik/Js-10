@@ -1,33 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1-Вариант</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document(function(){
-            $('button').click(function(){
-                $('#div1').animate({left: '100px'}, "slow");
-            });
-            $('#div2').animate({left: '100px'}, "slow");
-        }))
-    </script>
-</head>
-<body>
-    <button >3 и 5</button>
-    <div style="width:80px;height:80px;background-color:red;"></div><br> 
-    <p>1</p><br>
-    <div style="width:80px;height:80px;background-color:green;"></div><br> 
-    <p>2</p><br>
-    <div style="width:80px;height:80px;background-color:blue;"></div><br>
-    <p class="div1">3</p><br>
-    <div style="width:80px;height:80px;background-color:pink;"></div><br>
-    <p>4</p><br>
-    <div id="div2" style="width:80px;height:80px;background-color:purple;"></div><br>
-    <p id="div2">5</p><br>
-    <div style="width:80px;height:80px;background-color:black;"></div><br>
-    <p>6</p><br>
-</body>
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Вариант - 2</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script> 
+   $(document).ready(function () { 
+    $("button").click(function () { 
+     $("div.even").fadeOut(); 
+     $("div.even").fadeOut("slow"); 
+     $("div.even").fadeOut(3000); 
+    }); 
+   }); 
+  </script> 
+ </head> 
+ <body> 
+  <p>Демонстрация эффекта fadeOut() с различными параметрами.</p>  
+  <button>Нажми меня!</button> 
+  <br><br> 
+  <div style="width:80px;height:80px;background-color:red;"></div><br> 
+  <div style="width:80px;height:80px;background-color:green;"></div><br> 
+  <div style="width:80px;height:80px;background-color:blue;"></div><br>
+  <div style="width:80px;height:80px;background-color:pink;"></div><br>
+  <div style="width:80px;height:80px;background-color:purple;"></div><br> 
+  <div style="width:80px;heigh:80px;background-color:black;"></div><br>
+ </body> 
 </html>
