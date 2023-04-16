@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>2-Вариант</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script> 
+   $(document).ready(function () { 
+    $("button").click(function () { 
+     $("img:even").fadeOut(); 
+     $("img:even").fadeOut("slow"); 
+     $("img:even").fadeOut(3000); 
+    }); 
+   }); 
+  </script> 
+  <style>
+    img {
+      left: 100px;
+      border-top: 50px;
+      margin-top: 50px;
+    }
+  </style>
+ </head> 
+ <body> 
+  <button>Только чётные элементы.</button> <br>
+  <img src="img/1.jpg" height="80" width="80"> <br>
+  <img src="img/2.jpg" height="80" width="80"> <br>
+  <img src="img/3.jpg" height="80" width="80"><br>
+  <img src="img/4.jpg" height="80" width="80"><br>
+  <img src="img/5.jpg" height="80" width="80"><br>
+  <img src="img/6.jpg" height="80" width="80"><br>
+ </body> 
+</html>
